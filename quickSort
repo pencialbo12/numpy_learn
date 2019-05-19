@@ -1,0 +1,39 @@
+
+#day 1, 5-19-2019
+#quickSort
+def quickSort(arr):
+    if len(arr) < 1:
+        return arr
+    pivot = arr[len(arr)//2]
+    left = [x for x in arr if  x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right  = [x for x in arr if x > pivot]
+
+    return quickSort(left) + middle + quickSort(right)
+#print(quickSort([3,34,56,7,89,2,4]))
+
+#string
+hello = 'hello'
+world = 'world'
+print(hello + world)
+print(len(hello))
+print(len(hello+world))
+hw = hello + world
+print(hw)
+hws = hello + ' ' + world
+print(hws)
+#string object
+print(hw.capitalize())
+print(hw.upper())
+HW = "HELLO"
+print(hw.center(12))
+print(HW.replace('H','WANG SHU TONG'))
+
+
+
+
+
+
+
+
+
